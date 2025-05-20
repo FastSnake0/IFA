@@ -25,7 +25,7 @@ class GenRequest(BaseModel):
     ng_prompt: str
     ip: Optional[str]
     inject: Optional[str]
-    username: str  # новое поле
+    username: str
 
 @app.get("/models")
 async def get_models():
